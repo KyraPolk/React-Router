@@ -13,7 +13,7 @@ function App() {//the main function everything will reside in
    Useful if you'd like to perform some side effect whenever the current location changes.*/
   const { pathname } = location; /** "pathname" is the path of the URL => allows */
 
-  //I need two useEffect() functions, one for each api i need to render to the webpage
+  //I need two useEffect() functions, one for each API I need to render to the webpage
   useEffect(() => {
     const fetchPosts = async() =>{
       const response = await fetch("https://fsa-jsonplaceholder-69b5c48f1259.herokuapp.com/postsLinks")
@@ -37,7 +37,7 @@ function App() {//the main function everything will reside in
       <div>
         <nav>
           <Link to= '/' className={ pathname === '/' ? 'selected' : ''}>Home</Link>
-          <Link></Link>
+          <Link to></Link>
           <Link></Link>
 
         </nav>
